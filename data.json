@@ -1,0 +1,172 @@
+{
+  "passports": {
+    "US": {
+      "mobilityScore": 160,
+      "requirements": {
+        "France": "visa-free",
+        "Brazil": "visa-required",
+        "Japan": "visa-free",
+        "India": "e-visa",
+        "Canada": "visa-free",
+        "Saudi Arabia": "e-visa",
+        "UAE": "visa-free"
+      },
+      "banks": [
+        { "name": "Commercial Bank of Ethiopia", "description": "Trusted bank for international transfers", "accountNumber": "1000464654252", "currency": "ETB" },
+        { "name": "Awash Bank", "description": "Reliable remittances in Ethiopia", "accountNumber": "1000567891234", "currency": "ETB" },
+        { "name": "Bank of Abyssinia", "description": "Fast transfers across Africa", "accountNumber": "1000678901234", "currency": "ETB" }
+      ],
+      "fees": {
+        "application": { "amount": 4000, "currency": "ETB" },
+        "expediting": { "amount": 6000, "currency": "ETB" }
+      }
+    },
+    "UK": {
+      "mobilityScore": 158,
+      "requirements": {
+        "France": "visa-free",
+        "Brazil": "visa-free",
+        "Japan": "visa-free",
+        "India": "e-visa",
+        "Canada": "visa-free",
+        "Saudi Arabia": "e-visa",
+        "UAE": "visa-free"
+      },
+      "banks": [
+        { "name": "Commercial Bank of Ethiopia", "description": "Trusted bank for international transfers", "accountNumber": "1000464654252", "currency": "ETB" },
+        { "name": "Awash Bank", "description": "Reliable remittances in Ethiopia", "accountNumber": "1000567891234", "currency": "ETB" },
+        { "name": "Bank of Abyssinia", "description": "Fast transfers across Africa", "accountNumber": "1000678901234", "currency": "ETB" }
+      ],
+      "fees": {
+        "application": { "amount": 4000, "currency": "ETB" },
+        "expediting": { "amount": 6000, "currency": "ETB" }
+      }
+    },
+    "India": {
+      "mobilityScore": 60,
+      "requirements": {
+        "France": "visa-required",
+        "Brazil": "visa-required",
+        "Japan": "visa-required",
+        "India": "N/A",
+        "Canada": "visa-required",
+        "Saudi Arabia": "visa-required",
+        "UAE": "visa-free"
+      },
+      "banks": [
+        { "name": "Commercial Bank of Ethiopia", "description": "Trusted bank for international transfers", "accountNumber": "1000464654252", "currency": "ETB" },
+        { "name": "Awash Bank", "description": "Reliable remittances in Ethiopia", "accountNumber": "1000567891234", "currency": "ETB" },
+        { "name": "Bank of Abyssinia", "description": "Fast transfers across Africa", "accountNumber": "1000678901234", "currency": "ETB" }
+      ],
+      "fees": {
+        "application": { "amount": 4000, "currency": "ETB" },
+        "expediting": { "amount": 6000, "currency": "ETB" }
+      }
+    },
+    "Singapore": {
+      "mobilityScore": 194,
+      "requirements": {
+        "France": "visa-free",
+        "Brazil": "visa-free",
+        "Japan": "visa-free",
+        "India": "visa-free",
+        "Canada": "visa-free",
+        "Saudi Arabia": "e-visa",
+        "UAE": "visa-free"
+      },
+      "banks": [
+        { "name": "Commercial Bank of Ethiopia", "description": "Trusted bank for international transfers", "accountNumber": "1000464654252", "currency": "ETB" },
+        { "name": "Awash Bank", "description": "Reliable remittances in Ethiopia", "accountNumber": "1000567891234", "currency": "ETB" },
+        { "name": "Bank of Abyssinia", "description": "Fast transfers across Africa", "accountNumber": "1000678901234", "currency": "ETB" }
+      ],
+      "fees": {
+        "application": { "amount": 4000, "currency": "ETB" },
+        "expediting": { "amount": 6000, "currency": "ETB" }
+      }
+    },
+    "Brazil": {
+      "mobilityScore": 140,
+      "requirements": {
+        "France": "visa-free",
+        "Brazil": "N/A",
+        "Japan": "visa-free",
+        "India": "e-visa",
+        "Canada": "eTA",
+        "Saudi Arabia": "visa-required",
+        "UAE": "visa-free"
+      },
+      "banks": [
+        { "name": "Commercial Bank of Ethiopia", "description": "Trusted bank for international transfers", "accountNumber": "1000464654252", "currency": "ETB" },
+        { "name": "Awash Bank", "description": "Reliable remittances in Ethiopia", "accountNumber": "1000567891234", "currency": "ETB" },
+        { "name": "Bank of Abyssinia", "description": "Fast transfers across Africa", "accountNumber": "1000678901234", "currency": "ETB" }
+      ],
+      "fees": {
+        "application": { "amount": 4000, "currency": "ETB" },
+        "expediting": { "amount": 6000, "currency": "ETB" }
+      }
+    },
+    "Saudi": {
+      "mobilityScore": 91,
+      "requirements": {
+        "France": "visa-required",
+        "Brazil": "visa-required",
+        "Japan": "visa-required",
+        "India": "e-visa",
+        "Canada": "visa-required",
+        "Saudi Arabia": "N/A",
+        "UAE": "visa-free"
+      },
+      "banks": [
+        { "name": "Commercial Bank of Ethiopia", "description": "Trusted bank for international transfers", "accountNumber": "1000464654252", "currency": "ETB" },
+        { "name": "Awash Bank", "description": "Reliable remittances in Ethiopia", "accountNumber": "1000567891234", "currency": "ETB" },
+        { "name": "Bank of Abyssinia", "description": "Fast transfers across Africa", "accountNumber": "1000678901234", "currency": "ETB" }
+      ],
+      "fees": {
+        "application": { "amount": 4000, "currency": "ETB" },
+        "expediting": { "amount": 6000, "currency": "ETB" }
+      }
+    },
+    "UAE": {
+      "mobilityScore": 184,
+      "requirements": {
+        "France": "visa-free",
+        "Brazil": "visa-free",
+        "Japan": "visa-free",
+        "India": "visa-free",
+        "Canada": "visa-free",
+        "Saudi Arabia": "visa-free",
+        "UAE": "N/A"
+      },
+      "banks": [
+        { "name": "Commercial Bank of Ethiopia", "description": "Trusted bank for international transfers", "accountNumber": "1000464654252", "currency": "ETB" },
+        { "name": "Awash Bank", "description": "Reliable remittances in Ethiopia", "accountNumber": "1000567891234", "currency": "ETB" },
+        { "name": "Bank of Abyssinia", "description": "Fast transfers across Africa", "accountNumber": "1000678901234", "currency": "ETB" }
+      ],
+      "fees": {
+        "application": { "amount": 4000, "currency": "ETB" },
+        "expediting": { "amount": 6000, "currency": "ETB" }
+      }
+    },
+    "Ethiopia": {
+      "mobilityScore": 58,
+      "requirements": {
+        "France": "visa-required",
+        "Brazil": "visa-required",
+        "Japan": "visa-required",
+        "India": "e-visa",
+        "Canada": "visa-required",
+        "Saudi Arabia": "visa-required",
+        "UAE": "visa-on-arrival"
+      },
+      "banks": [
+        { "name": "Commercial Bank of Ethiopia", "description": "Trusted bank for international transfers", "accountNumber": "1000464654252", "currency": "ETB" },
+        { "name": "Awash Bank", "description": "Reliable remittances in Ethiopia", "accountNumber": "1000567891234", "currency": "ETB" },
+        { "name": "Bank of Abyssinia", "description": "Fast transfers across Africa", "accountNumber": "1000678901234", "currency": "ETB" }
+      ],
+      "fees": {
+        "application": { "amount": 4000, "currency": "ETB" },
+        "expediting": { "amount": 6000, "currency": "ETB" }
+      }
+    }
+  }
+}

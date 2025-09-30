@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passport Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Passport Dashboard</h1>
+    <!-- User Info Form -->
+    <form id="userInfoForm">
+      <h3>Enter Your Details / Kan armaan gadi guuti</h3>
+      <div class="form-group">
+        <label for="name">Full Name: / Maqaa guutu</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="motherName">Full Mother Name: / Maqaa guutu kan haadhaa</label>
+        <input type="text" id="motherName" name="motherName" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age: / Umurii</label>
+        <input type="number" id="age" name="age" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="sex">Sex: / Saala</label>
+        <select id="sex" name="sex" required>
+          <option value="" disabled selected>Select / Filadhu</option>
+          <option value="Male">Male / Dhiira</option>
+          <option value="Female">Female / Dhalaa</option>
+          <option value="Other">Other / Kan biraa</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="personalPhoto">Personal Photo: / Phooto kee</label>
+        <p class="photo-guidelines">Requirements: Color, white background, no glasses, neutral expression or natural smile, both eyes open, no hats or scarves (unless for religious purposes with face fully visible).</p>
+        <video id="videoPhoto" width="300" height="200" autoplay style="display: none;"></video>
+        <canvas id="canvasPhoto" width="300" height="200" style="display: none;"></canvas>
+        <img id="photoPreview" style="display: none; max-width: 300px;">
+        <div>
+          <button type="button" id="captureButtonPhoto">Capture Photo</button>
+          <input type="file" id="photoUpload" accept="image/*" capture="user">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="nationalIdFront">National ID (Front): / National ID fuula duraan</label>
+        <video id="videoFront" width="300" height="200" autoplay style="display: none;"></video>
+        <canvas id="canvasFront" width="300" height="200" style="display: none;"></canvas>
+        <img id="idPreviewFront" style="display: none; max-width: 300px;">
+        <div>
+          <button type="button" id="captureButtonFront">Capture Front ID</button>
+          <input type="file" id="idUploadFront" accept="image/*" capture="environment">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="nationalIdBack">National ID (Back): / National ID fuula duubaan</label>
+        <video id="videoBack" width="300" height="200" autoplay style="display: none;"></video>
+        <canvas id="canvasBack" width="300" height="200" style="display: none;"></canvas>
+        <img id="idPreviewBack" style="display: none; max-width: 300px;">
+        <div>
+          <button type="button" id="captureButtonBack">Capture Back ID</button>
+          <input type="file" id="idUploadBack" accept="image/*" capture="environment">
+        </div>
+      </div>
+      <button type="submit">Submit Details / Ergi</button>
+    </form>
+
+    <!-- Success Message -->
+    <div id="successMessage" style="display: none;">
+      <h3>Successful / Milkaa'eera</h3>
+      <p>Please proceed to select your passport country.</p>
+    </div>
+
+    <!-- Passport Form (Hidden Initially) -->
+    <form id="passportForm" style="display: none;">
+      <label for="passport">Select Your Passport: / Passport filadhu</label>
+      <select id="passport" name="passport">
+        <option value="" disabled selected>Choose a country / BiYYa filadhu</option>
+        <option value="US">United States</option>
+        <option value="UK">United Kingdom</option>
+        <option value="India">India</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Saudi">Saudi Arabia</option>
+        <option value="UAE">UAE (Dubai)</option>
+        <option value="Ethiopia">Ethiopia</option>
+      </select>
+      <button type="submit">Show Requirements & Banking / Kaffalti raawwadhu</button>
+      <button type="button" id="resetButton">Reset / Irra deebiin guuti</button>
+    </form>
+
+    <!-- Results Section -->
+    <div id="results" style="display: none;">
+      <h2 id="resultTitle"></h2>
+      <div id="idDisplay">
+        <h3>Your Documents</h3>
+        <img id="resultPhotoPreview" style="max-width: 200px; display: none;">
+        <img id="resultIdPreviewFront" style="max-width: 200px; display: none;">
+        <img id="resultIdPreviewBack" style="max-width: 200px; display: none;">
+      </div>
+      <div id="mobilityBadge"></div>
+      <table id="requirementsTable">
+        <thead>
+          <tr><th>Destination</th><th>Requirement</th></tr>
+        </thead>
+        <tbody id="requirementsBody"></tbody>
+      </table>
+      <div id="bankingSection">
+        <h3>Send Money Abroad - Recommended Services</h3>
+        <p id="currencyNote"></p>
+        <ul id="banksList"></ul>
+        <div id="accountDisplay" style="display: none;"></div>
+        <div id="screenshotSection" style="display: none;">
+          <h4>Upload Transfer Screenshot / Kaffalti phooto kaasuun ergi</h4>
+          <input type="file" id="screenshotUpload" accept="image/*">
+          <img id="screenshotPreview" style="display: none; max-width: 200px;">
+          <div id="successTransfer" style="display: none;">Successful / Milkaa'eera</div>
+        </div>
+      </div>
+      <p class="disclaimer">Disclaimer: Visa information is for reference only. Please verify with official government sources before travel.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
